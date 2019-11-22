@@ -1,12 +1,12 @@
 module.exports = {
 
-  title: 'Vue Admin Template',
+  title: '深圳宏利达',
 
   /**
    * @type {boolean} true | false
    * @description Whether fix the header
    */
-  fixedHeader: false,
+  fixedHeader: true,
 
   /**
    * @type {boolean} true | false
