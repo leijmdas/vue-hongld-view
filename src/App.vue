@@ -9,7 +9,7 @@
     <!--<img src="@/assets/images/banner1.jpg"/>-->
     <!--</div>-->
     <div>
-      <template>
+
         <el-carousel indicator-position="outside" height="400px" interval="2500">
           <el-carousel-item v-for="item in 4" :key="item">
             <div class="block" align="center">
@@ -21,10 +21,10 @@
             </div>
           </el-carousel-item>
         </el-carousel>
-      </template>
+
     </div>
-    <div align="center">
-      <el-tabs left="200px" v-model="activeName" @tab-click="handleClick">
+    <div text-align="center">
+      <el-tabs  v-model="activeName" @tab-click="handleClick">
         <el-tab-pane label="用户管理" name="first">用户管理</el-tab-pane>
         <el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
         <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
