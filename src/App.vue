@@ -36,9 +36,13 @@
                 <el-tab-pane label="资质/案例" name="case">案例</el-tab-pane>
                 <el-tab-pane label="客户反馈" name="feedback">客户反馈</el-tab-pane>
                 <el-tab-pane label="联系我们" name="contact">
+                  <el-row>
+                  <el-col :span="4">
+                    <img src="@/assets/images/contact1.png"/>
+
+                  </el-col>
                   <el-col :span="16">
-                  <div>
-                    <el-row>
+                     <el-row>
                       <div text-align="left" class="div-title">
                         <span class="pTitle"> 联系方式 </span>
                       </div>
@@ -82,8 +86,8 @@
                       <div  class="div-a">邮 编：518000</div>
                     </el-row>
 
-                  </div>
                   </el-col>
+                  </el-row>
                 </el-tab-pane>
               </el-tabs>
 
