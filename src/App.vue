@@ -70,7 +70,7 @@
                 </el-tab-pane>
                 <el-tab-pane label="产品展示" name="prd">产品展示</el-tab-pane>
                 <el-tab-pane label="资质/案例" name="case">案例</el-tab-pane>
-                <el-tab-pane label="客户反馈" name="feedback">客户反馈</el-tab-pane>
+
                 <el-tab-pane label="联系我们" name="contact">
                   <el-row>
                   <el-col :span="4">
@@ -125,6 +125,7 @@
                   </el-col>
                   </el-row>
                 </el-tab-pane>
+                <el-tab-pane label="客户反馈" name="feedback">客户反馈</el-tab-pane>
               </el-tabs>
 
         </el-main>
