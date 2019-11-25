@@ -26,7 +26,7 @@
     <div text-align="center" height="600px">
 
       <el-container style="height: 800px; border: 1px solid #eee">
-        <el-aside width="20%" style="background-color: rgb(238, 241, 246)"></el-aside>
+        <el-aside width="10%" style="background-color: rgb(238, 241, 246)"></el-aside>
         <el-main>
 
               <el-tabs stretch="true" v-model="activeName" @tab-click="handleClick">
