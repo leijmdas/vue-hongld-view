@@ -49,12 +49,12 @@
                   </el-row>
 
                   <el-row>
-                    <el-col :span="2"><p></p>
+                    <el-col :span="1"><p></p>
                     </el-col>
                     <el-col :span="6">
                       <img src="@/assets/images/company/brief2.jpg"/>
                     </el-col>
-                    <el-col :span="12">
+                    <el-col :span="13">
                       <!--<div>-->
                       <!--<el-divider class="pCompany" content-position="right"> 公司简介 </el-divider>-->
                       <!--</div>-->
