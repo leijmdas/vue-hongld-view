@@ -125,7 +125,19 @@
                   </el-col>
                   </el-row>
                 </el-tab-pane>
-                <el-tab-pane label="客户反馈" name="feedback">客户反馈</el-tab-pane>
+                <el-tab-pane label="客户反馈" name="feedback">
+                  <el-row>姓名
+                    <el-input width="200px" v-model="input" placeholder="请输入内容"></el-input>
+                  </el-row>
+                  <div>电话</div>
+                  <div>Email</div>
+                  <div>QQ</div>
+                  <div>手机</div>
+                  <div>详细地址</div>
+                  <div>留言</div>
+                  <div>验证码</div>
+                  <el-row><el-button>提交留言</el-button></el-row>
+                </el-tab-pane>
               </el-tabs>
 
         </el-main>
