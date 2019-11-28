@@ -57,7 +57,7 @@
       </el-form-item>
       <el-form-item>
 
-        <el-button size="medium" @onclick="alert('提交留言响应')">提交留言</el-button>
+        <el-button size="medium" @click="alert('提交留言响应')">提交留言</el-button>
       </el-form-item>
 
     </el-form>
