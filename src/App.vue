@@ -76,14 +76,14 @@
               <Profile></Profile>
             </el-tab-pane>
             <el-tab-pane label="资质/案例" name="case">
-              <Feedback></Feedback>
+              <Case></Case>
             </el-tab-pane>
 
             <el-tab-pane label="联系我们" name="contact">
              <Contact></Contact>
             </el-tab-pane>
             <el-tab-pane label="客户反馈" name="feedback">
-              <Case width="50%"></Case>
+              <Feedback width="50%"></Feedback>
             </el-tab-pane>
           </el-tabs>
 
