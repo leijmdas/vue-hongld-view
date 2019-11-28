@@ -10,7 +10,7 @@
     <!--</div>-->
     <div>
 
-        <el-carousel indicator-position="outside" height="400px" interval="2500">
+        <el-carousel indicator-position="outside" height="400px" :interval="2500">
           <el-carousel-item v-for="item in 4" :key="item">
             <div class="block" align="center">
 
@@ -29,116 +29,108 @@
         <el-aside width="10%" style="background-color: rgb(238, 241, 246)"></el-aside>
         <el-main>
 
-              <el-tabs stretch="true" v-model="activeName" @tab-click="handleClick">
-                <el-tab-pane label="首页" name="page">首页</el-tab-pane>
-                <el-tab-pane label="公司简介" name="explain">
-                  <el-row>
-                    <img src="@/assets/images/company/brief1.jpg"/>
-                  </el-row>
-                  <el-row>
-                    <img src="@/assets/images/company/prd/prd1.jpg"/>
-                  </el-row>
-                  <el-row>
-                    <img src="@/assets/images/company/prd/prd2.jpg"/>
-                  </el-row>
-                  <el-row>
-                    <img src="@/assets/images/company/prd/prd3.jpg"/>
-                  </el-row>
-                  <el-row>
-                    <img src="@/assets/images/company/prd/prd4.jpg"/>
-                  </el-row>
+          <el-tabs :stretch="true" v-model="activeName" @tab-click="handleClick">
+            <el-tab-pane label="首页" name="page">
+              <el-button @onclick="alert(1)">首页</el-button>
 
-                  <el-row>
-                    <el-col :span="1"><p></p>
-                    </el-col>
-                    <el-col :span="6">
-                      <img src="@/assets/images/company/brief2.jpg"/>
-                    </el-col>
-                    <el-col :span="13">
-                      <!--<div>-->
-                      <!--<el-divider class="pCompany" content-position="right"> 公司简介 </el-divider>-->
-                      <!--</div>-->
-                      <span class="pCompany">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;深圳市宏利达海棉厂是中国首席记忆海棉制造商，国内唯一一家引进德国专业技术研制开发聚氨酯产品的制造企业.
+            </el-tab-pane>
+            <el-tab-pane label="公司简介" name="explain">
+              <el-row>
+                <img src="@/assets/images/company/brief1.jpg"/>
+              </el-row>
+              <el-row>
+                <img src="@/assets/images/company/prd/prd1.jpg"/>
+              </el-row>
+              <el-row>
+                <img src="@/assets/images/company/prd/prd2.jpg"/>
+              </el-row>
+              <el-row>
+                <img src="@/assets/images/company/prd/prd3.jpg"/>
+              </el-row>
+              <el-row>
+                <img src="@/assets/images/company/prd/prd4.jpg"/>
+              </el-row>
+
+              <el-row>
+                <el-col :span="1"><p></p>
+                </el-col>
+                <el-col :span="6">
+                  <img src="@/assets/images/company/brief2.jpg"/>
+                </el-col>
+                <el-col :span="13">
+                  <!--<div>-->
+                  <!--<el-divider class="pCompany" content-position="right"> 公司简介 </el-divider>-->
+                  <!--</div>-->
+                  <span class="pCompany">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;深圳市宏利达海棉厂是中国首席记忆海棉制造商，国内唯一一家引进德国专业技术研制开发聚氨酯产品的制造企业.
     专业生产:各种慢回弹海棉（惰性海棉）,包括电脑包硬质慢回弹及床垫软质慢回弹,及特殊电子防火防静电海棉，聚酯海棉,压缩海棉.
     适合行业：手袋，箱包，医疗保健按摩垫，护具，玩具，运动用品，工艺品，电子产品，枕头床垫，坐垫，靠垫及其他海棉制品等.
     多年来, 宏利达海棉厂凭借优质的技术和服务赢得了广大用户的信任和良好信誉. 本公司本著以客户为导向以技术为核心, 以服务为支持的真诚, 务实的精神, 品质保证, 精益求精, 准时交货, 与各行各业客户紧密合作,
                         不断进取，与您共发展。
                       </span>
-                    </el-col>
+                </el-col>
+              </el-row>
+
+            </el-tab-pane>
+            <el-tab-pane label="产品展示" name="prd">产品展示</el-tab-pane>
+            <el-tab-pane label="资质/案例" name="case">
+              <Feedback></Feedback>
+            </el-tab-pane>
+
+            <el-tab-pane label="联系我们" name="contact">
+              <el-row>
+                <el-col :span="4">
+                  <img src="@/assets/images/contact1.png"/>
+
+                </el-col>
+                <el-col :span="16">
+                  <el-row>
+                    <div text-align="left" class="div-title">
+                      <span class="pTitle"> 联系方式 </span>
+                    </div>
                   </el-row>
 
-                </el-tab-pane>
-                <el-tab-pane label="产品展示" name="prd">产品展示</el-tab-pane>
-                <el-tab-pane label="资质/案例" name="case">案例</el-tab-pane>
-
-                <el-tab-pane label="联系我们" name="contact">
                   <el-row>
-                  <el-col :span="4">
-                    <img src="@/assets/images/contact1.png"/>
+                    <div height="20px" class="div-a">
+                      深圳市宏利达海棉有限公司
+                    </div>
+                  </el-row>
+                  <el-row>
+                    <div class="div-a">
+                      联 系 人：朱金星 先生 (销售经理)
+                    </div>
+                  </el-row>
+                  <el-row>
+                    <div class="div-button">
+                      <el-button>查看公司介绍</el-button>
+                      <el-button>查看信用状况</el-button>
 
-                  </el-col>
-                  <el-col :span="16">
-                     <el-row>
-                      <div text-align="left" class="div-title">
-                        <span class="pTitle"> 联系方式 </span>
-                      </div>
-                    </el-row>
-
-                    <el-divider></el-divider>
-                    <el-row>
-                      <div height="20px" class="div-a" >
-                        深圳市宏利达海棉有限公司
-                      </div>
-                    </el-row>
-                    <el-divider></el-divider>
-                    <el-row>
-                      <div class="div-a">
-                        联 系 人：朱金星 先生 (销售经理)
-                      </div>
-                    </el-row>
-                    <el-divider></el-divider>
-                    <el-row>
-                      <div  class="div-button">
-                        <el-button>查看公司介绍</el-button>
-                        <el-button>查看信用状况</el-button>
-
-                      </div>
-                    </el-row>
-                    <el-row>
+                    </div>
+                  </el-row>
+                  <el-row>
                     <div class="div-a">
                       电 话：86 755 29736896-807
                     </div>
-                    </el-row>
-                    <el-row>
-                    <div  class="div-a">移动电话：13538116703</div>
-                    </el-row>
-                    <el-row>
-                      <div  class="div-a">传 真：86 755 29736003</div>
-                    </el-row>
-                    <el-row>
-                      <div  class="div-a">地 址：中国 广东 深圳市龙岗区 平湖镇辅城坳凤岐路2-2号</div>
-                    </el-row>
-                    <el-row>
-                      <div  class="div-a">邮 编：518000</div>
-                    </el-row>
+                  </el-row>
+                  <el-row>
+                    <div class="div-a">移动电话：13538116703</div>
+                  </el-row>
+                  <el-row>
+                    <div class="div-a">传 真：86 755 29736003</div>
+                  </el-row>
+                  <el-row>
+                    <div class="div-a">地 址：中国 广东 深圳市龙岗区 平湖镇辅城坳凤岐路2-2号</div>
+                  </el-row>
+                  <el-row>
+                    <div class="div-a">邮 编：518000</div>
+                  </el-row>
 
-                  </el-col>
-                  </el-row>
-                </el-tab-pane>
-                <el-tab-pane label="客户反馈" name="feedback">
-                  <el-row>姓名
-                    <el-input width="200px" v-model="input" placeholder="请输入内容"></el-input>
-                  </el-row>
-                  <div>电话</div>
-                  <div>Email</div>
-                  <div>QQ</div>
-                  <div>手机</div>
-                  <div>详细地址</div>
-                  <div>留言</div>
-                  <div>验证码</div>
-                  <el-row><el-button>提交留言</el-button></el-row>
-                </el-tab-pane>
-              </el-tabs>
+                </el-col>
+              </el-row>
+            </el-tab-pane>
+            <el-tab-pane label="客户反馈" name="feedback">
+              <Case width="50%"></Case>
+            </el-tab-pane>
+          </el-tabs>
 
         </el-main>
       </el-container>
@@ -156,21 +148,6 @@
   </div>
 </template>
 
-<script>
-  export default {
-    name: 'App',
-    data() {
-      return {
-        activeName: 'second'
-      };
-    },
-    methods: {
-      handleClick(tab, event) {
-        console.log(tab, event);
-      }
-    }
-  };
-</script>
 
 <style>
   .pCompany{
@@ -218,3 +195,22 @@
     height: 30px;
   }
 </style>
+<script>
+  import Feedback from "./views/feedback/index";
+  import Case from "./views/case/index";
+
+  export default {
+    name: 'App',
+    components: {Feedback,Case},
+    data() {
+      return {
+        activeName: 'second'
+      };
+    },
+    methods: {
+      handleClick(tab, event) {
+        console.log(tab, event);
+      }
+    }
+  };
+</script>
