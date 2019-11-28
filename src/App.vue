@@ -71,7 +71,9 @@
               </el-row>
 
             </el-tab-pane>
-            <el-tab-pane label="产品展示" name="prd">产品展示</el-tab-pane>
+            <el-tab-pane label="产品展示" name="prd">
+              <Profile></Profile>
+            </el-tab-pane>
             <el-tab-pane label="资质/案例" name="case">
               <Feedback></Feedback>
             </el-tab-pane>
@@ -88,15 +90,16 @@
       </el-container>
     </div>
 
-    <div style="position:relative;">
-      <img src="@/assets/images/bottom.jpg" width="100%"/>
-      　　<div style="color:#fef0f0 ;position:relative; z-index:2;   top:-120px; text-align:center; ">地址： 中国 广东 深圳 龙岗区布吉大芬村和通花园3栋405（办公场所） </div>
-      <div style="position:relative; z-index:2;   top:-100px; text-align:center; ">深圳市宏利达海绵有限公司 版权所有 2019-2020 All
-        CopyRights
-        Reserve.
-      </div>
+    <!--<div style="position:relative;">-->
+      <!--<img src="@/assets/images/bottom.jpg" width="100%"/>-->
+      <!--　　<div style="color:#fef0f0 ;position:relative; z-index:2;   top:-120px; text-align:center; ">地址： 中国 广东 深圳 龙岗区布吉大芬村和通花园3栋405（办公场所） </div>-->
+      <!--<div style="position:relative; z-index:2;   top:-100px; text-align:center; ">深圳市宏利达海绵有限公司 版权所有 2019-2020 All-->
+        <!--CopyRights-->
+        <!--Reserve.-->
+      <!--</div>-->
 
-    </div>
+    <!--</div>-->
+    <Bottom></Bottom>
   </div>
 </template>
 
@@ -148,13 +151,15 @@
   }
 </style>
 <script>
+  import Bottom from "./views/mainbottom/index";
   import Contact from "./views/contact/index";
   import Feedback from "./views/feedback/index";
   import Case from "./views/case/index";
+  import Profile from "./views/profile/index";
 
   export default {
     name: 'App',
-    components: {Contact,Feedback,Case},
+    components: {Profile,Bottom,Contact,Feedback,Case},
     data() {
       return {
         activeName: 'second'
