@@ -26,7 +26,7 @@
     <div text-align="center" height="600px">
 
       <el-container style="height: 800px; border: 1px solid #eee">
-        <el-aside width="10%" style="background-color: rgb(238, 241, 246)">
+        <el-aside width="12%" style="background-color: rgb(238, 241, 246)">
 
           <Left></Left>
         </el-aside>
