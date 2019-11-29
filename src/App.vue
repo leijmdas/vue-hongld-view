@@ -163,7 +163,7 @@
     components: {Profile,Bottom,Contact,Feedback,Case},
     data() {
       return {
-        activeName: 'second'
+        activeName: 'page'
       };
     },
     methods: {
