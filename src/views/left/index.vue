@@ -1,12 +1,22 @@
 <template>
   <div>
     <img src="@/assets/images/company/prd/prdtype.jpg"/>
-    <div></div>
+    <div>
+      <div class="div-c"> 记忆棉眼罩</div>
+      <div class="div-c"> 记忆棉枕头</div>
+      <div class="div-c"> 形状海绵</div>
+      <div class="div-c"> 海绵内衬</div>
+      <div class="div-c">低密度海绵</div>
+      <div class="div-c">中高密度海绵</div>
+      <div class="div-c">阻燃防火海绵</div>
+      <div class="div-c">慢回弹记忆海</div>
+      <div class="div-c">凝胶梦幻记忆</div>
+    </div>
 
     <div class="div-a" align="bottom">
       <img src="@/assets/images/company/prd/contact.jpg"/>
       <el-row>
-        <el-col  >
+        <el-col>
           <el-row>
             <div class="div-a">
               联系人：朱金星先生
@@ -23,6 +33,11 @@
           <el-row>
             <div class="div-a">传 真：86 755 29736003</div>
           </el-row>
+
+          <el-row>
+            <div class="div-a">邮 箱：xxx@163.com</div>
+          </el-row>
+
           <el-row>
             <div class="div-b">地 址：中国 广东 深圳市龙岗区 平湖镇辅城坳凤岐路2-2号</div>
           </el-row>
@@ -44,43 +59,48 @@
           name: '',
           region: '',
           date1: '',
-        date2: '',
-        delivery: false,
-        type: [],
-        resource: '',
-        desc: ''
+          date2: '',
+          delivery: false,
+          type: [],
+          resource: '',
+          desc: ''
+        }
+      }
+    },
+    methods: {
+      onSubmit() {
+        this.$message('submit!')
+      },
+      onCancel() {
+        this.$message({
+          message: 'cancel!',
+          type: 'warning'
+        })
       }
     }
-  },
-  methods: {
-    onSubmit() {
-      this.$message('submit!')
-    },
-    onCancel() {
-      this.$message({
-        message: 'cancel!',
-        type: 'warning'
-      })
-    }
   }
-}
 </script>
 
 <style scoped>
-.line{
-  text-align: center;
-}
+  .line {
+    text-align: center;
+  }
 
-.div-a {
-  float: left;
-  height: 30px;
-  style: "background:#000; color:#FFF"
-}
-.div-b {
-  float: left;
-  height: 60px;
-  style: "background:#000; color:#FFF"
-}
+  .div-a {
+    float: left;
+    height: 30px;
+    style: "background:#000; color:#FFF"
+  }
 
+  .div-b {
+    float: left;
+    height: 50px;
+    style: "background:#000; color:#FFF"
+  }
+  .div-c {
+    float: center;
+    height: 20px;
+    style: "background:#000; color:#FFF"
+  }
 </style>
 
