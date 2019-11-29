@@ -94,6 +94,7 @@
   }
 
   .div-b {
+    margin-left: 5px;
     float: left;
     height: 50px;
     style: "background:#000; color:#FFF"
