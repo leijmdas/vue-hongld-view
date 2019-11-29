@@ -13,7 +13,7 @@
       <div class="div-c">凝胶梦幻记忆</div>
     </div>
 
-    <div class="div-a" align="bottom">
+    <div class="div-a" >
       <img src="@/assets/images/company/prd/contact.jpg"/>
       <el-row>
         <el-col>
@@ -87,6 +87,7 @@
   }
 
   .div-a {
+    margin-left: 5px;
     float: left;
     height: 30px;
     style: "background:#000; color:#FFF"
@@ -98,6 +99,7 @@
     style: "background:#000; color:#FFF"
   }
   .div-c {
+    margin-left:10px;
     float: center;
     height: 20px;
     style: "background:#000; color:#FFF"
