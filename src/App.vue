@@ -26,13 +26,16 @@
     <div text-align="center" height="600px">
 
       <el-container style="height: 800px; border: 1px solid #eee">
-        <el-aside width="10%" style="background-color: rgb(238, 241, 246)"></el-aside>
+        <el-aside width="10%" style="background-color: rgb(238, 241, 246)">
+
+          <Left></Left>
+        </el-aside>
         <el-main>
 
           <el-tabs :stretch="true" v-model="activeName" @tab-click="handleClick">
             <el-tab-pane label="首页" name="page">
-              <el-button @onclick="alert(1)">首页</el-button>
-              <Contact></Contact>
+
+              <Left></Left>
             </el-tab-pane>
             <el-tab-pane label="公司简介" name="explain">
               <!--<el-row>-->
@@ -73,7 +76,7 @@
 
             </el-tab-pane>
             <el-tab-pane label="产品展示" name="prd">
-              <Profile></Profile>
+              <Left></Left>
             </el-tab-pane>
             <el-tab-pane label="资质/案例" name="case">
               <Case></Case>
@@ -152,6 +155,7 @@
   }
 </style>
 <script>
+  import Left from "./views/left/index";
   import Bottom from "./views/mainbottom/index";
   import Contact from "./views/contact/index";
   import Feedback from "./views/feedback/index";
@@ -160,7 +164,7 @@
 
   export default {
     name: 'App',
-    components: {Profile,Bottom,Contact,Feedback,Case},
+    components: {Left,Profile,Bottom,Contact,Feedback,Case},
     data() {
       return {
         activeName: 'page'
