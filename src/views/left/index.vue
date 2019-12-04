@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="@/assets/images/company/prd/prdtype.jpg"/>
+    <img src="@/assets/images/company/prd/prdtype.jpg">
     <div>
       <div class="div-c"> 记忆棉眼罩</div>
       <div class="div-c"> 记忆棉枕头</div>
@@ -14,13 +14,13 @@
     </div>
 
     <div class="div-a">
-      <img src="@/assets/images/company/prd/contact.jpg"/>
-      <br/>
-      <br/>
+      <img src="@/assets/images/company/prd/contact.jpg">
+      <br>
+      <br>
 
       <el-row>
         <div class="div-a">
-          联系人：朱金星先生
+          联系人：朱先生
         </div>
       </el-row>
       <el-row>
@@ -51,27 +51,27 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        form: {
-          name: '',
+export default {
+  data() {
+    return {
+      form: {
+        name: ''
 
-        }
-      }
-    },
-    methods: {
-      onSubmit() {
-        this.$message('submit!')
-      },
-      onCancel() {
-        this.$message({
-          message: 'cancel!',
-          type: 'warning'
-        })
       }
     }
+  },
+  methods: {
+    onSubmit() {
+      this.$message('submit!')
+    },
+    onCancel() {
+      this.$message({
+        message: 'cancel!',
+        type: 'warning'
+      })
+    }
   }
+}
 </script>
 
 <style scoped>
