@@ -70,5 +70,13 @@ export default {
 .line{
   text-align: center;
 }
+.pCompany{
+  margin-left: 10px;
+  margin-top: 20px;
+  font-weight:bold;
+  font-size:larger;
+
+  color: dodgerblue;
+}
 </style>
 

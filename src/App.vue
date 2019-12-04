@@ -23,10 +23,11 @@
       </el-carousel>
 
     </div>
-    <div text-align="center" height="600px">
+    <div text-align="center">
 
       <el-container style="height: 800px; border: 1px solid #eee">
-        <el-aside width="12%" style="background-color: rgb(238, 241, 246)">
+        <!--<el-aside width="12%" style="background-color: rgb(238, 241, 246)">-->
+        <el-aside width="12%">
 
           <Left />
         </el-aside>
@@ -34,8 +35,9 @@
 
           <el-tabs v-model="activeName" :stretch="true" @tab-click="handleClick">
             <el-tab-pane label="首页" name="page">
-              <Profile />
-
+              <div>
+                <Profile />
+              </div>
               <!--<Page></Page>-->
             </el-tab-pane>
             <!--<el-tab-pane label="公司简介" name="explain">-->

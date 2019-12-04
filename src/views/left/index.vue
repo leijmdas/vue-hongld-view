@@ -16,7 +16,6 @@
     <div class="div-a">
       <img src="@/assets/images/company/prd/contact.jpg">
       <br>
-      <br>
 
       <el-row>
         <div class="div-a">
