@@ -2,15 +2,15 @@
   <div>
     <img src="@/assets/images/company/prd/prdtype.jpg">
     <div>
-      <div class="div-c"> 记忆棉眼罩</div>
-      <div class="div-c"> 记忆棉枕头</div>
-      <div class="div-c"> 形状海绵</div>
-      <div class="div-c"> 海绵内衬</div>
-      <div class="div-c">低密度海绵</div>
-      <div class="div-c">中高密度海绵</div>
-      <div class="div-c">阻燃防火海绵</div>
-      <div class="div-c">慢回弹记忆海</div>
-      <div class="div-c">凝胶梦幻记忆</div>
+      <div class="div-prd-type"> 记忆棉眼罩</div>
+      <div class="div-prd-type"> 记忆棉枕头</div>
+      <div class="div-prd-type"> 形状海绵</div>
+      <div class="div-prd-type"> 海绵内衬</div>
+      <div class="div-prd-type">低密度海绵</div>
+      <div class="div-prd-type">中高密度海绵</div>
+      <div class="div-prd-type">阻燃防火海绵</div>
+      <div class="div-prd-type">慢回弹记忆海</div>
+      <div class="div-prd-type">凝胶梦幻记忆</div>
     </div>
 
     <div class="div-a">
@@ -24,7 +24,7 @@
         </div>
       </el-row>
       <el-row>
-        <div class="div-a">
+        <div class="div-b">
           电&nbsp;&nbsp;话：86 755 29736896-807
         </div>
       </el-row>
@@ -78,7 +78,12 @@ export default {
   .line {
     text-align: center;
   }
+  .div-prd-type {
+    margin-left: 10px;
 
+    height: 25px;
+    style: "background:#000; color:#FFF"
+  }
   .div-a {
     margin-left: 5px;
     float: left;
