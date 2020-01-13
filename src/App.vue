@@ -1,7 +1,14 @@
 <template>
   <div id="app">
     <!--<router-view />-->
-    <div align="center"><img src="@/assets/images/welcome.jpg"></div>
+    <div align="center"><img src="@/assets/images/welcome.jpg">
+      <!--<div>-->
+
+      <!--<el-button @click="show">主要链接</el-button>-->
+      <!--<el-button @click="show">成功链接</el-button>-->
+      <!--<el-link type="warning">警告链接</el-link>-->
+      <!--</div>-->
+    </div>
     <div align="center">
       <img src="@/assets/images/hld.jpg">
     </div>
@@ -144,7 +151,19 @@ export default {
   methods: {
     handleClick(tab, event) {
       console.log(tab, event)
+    },
+    show() {
+      this.$alert('这是一段内容', '标题名称', {
+        confirmButtonText: '确定',
+        callback: action => {
+          // this.$message({
+          //   type: 'info',
+          //   message: `action: ${ action }`
+          // });
+        }
+      })
     }
+
   }
 }
 </script>
